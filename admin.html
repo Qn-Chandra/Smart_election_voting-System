@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Online Voting System - Admin</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
+
+        <!-- Favicon -->
+        <link href="static/img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="static/lib/animate/animate.min.css" rel="stylesheet">
+        <link href="static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="static/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body style="background-image:url('flag.jpg'); background-size:cover;">
+
+<!--    <body>-->
+
+        <!-- Nav Bar Start -->
+        <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+              <a href="index.html" class="navbar-brand"> <span></span></a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="admin.html" class="nav-item nav-link active">Admin</a>
+                        <a href="train.html" class="nav-item nav-link">Train</a>
+                    <a href="voting.html" class="nav-item nav-link">Vote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+
+
+           <!-- Hero Start -->
+        <div class="hero">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="hero-text">
+                            
+                                <h1 style="margin-left: 450px">Admin Login</h1>
+                                <br>
+                                <div style="margin-left: 330px">
+                                    <form action="{{ url_for('admin') }}" method="post">
+                                        <div class="row">
+                                            <div class="column" style="margin-left: 170px">
+                                                <input type="text" name="email" class="form-control" placeholder="Enter Your Email" required="required" data-validation-required-message="Please enter your email" />
+                                            </div>
+                                            <div class="column" style="margin-left: 170px">
+                                                <input type="password" name="password" class="form-control" placeholder="Enter Your Password" required="required" data-validation-required-message="Please enter your password" />
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="row" style="margin-left: 210px">
+                                            <input class='btn' type="submit">
+                                        </div>
+                                    </form>
+                                </div>
+                            
+                                <h1 style="margin-left:320px">Administrator Controls</h1>
+                                <br>
+                                <div style="margin-left: 350px">
+                                    <a class="btn" href="nominee.html" style="font-size:25px;"><b>Add Nominee</b></a>
+                                    <a class="btn" href="voting_res.html" style="font-size:25px;"><b>View Results</b></a>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero End -->
+
+                
